@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Pacotes de Viagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .pacote {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 22%;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .pacote:hover {
+            transform: scale(1.05);
+        }
+
+        .pacote img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .pacote h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .pacote p {
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .pacote .preco {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+
+        .pacote button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .pacote button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Venda de Pacotes de Viagens</h1>
+    </header>
+
+    <div class="container">
+        <div class="pacote" id="paris">
+            <img src="paris.jpg" alt="Paris">
+            <h3>Paris</h3>
+            <p>Descubra a cidade das luzes com um pacote completo de 7 dias.</p>
+            <div class="preco">R$ 5.000</div>
+            <button onclick="comprar('Paris')">Comprar Pacote</button>
+        </div>
+
+        <div class="pacote" id="canada">
+            <img src="canada.jpg" alt="Canadá">
+            <h3>Canadá</h3>
+            <p>Aventura e paisagens incríveis por 10 dias no Canadá.</p>
+            <div class="preco">R$ 7.500</div>
+            <button onclick="comprar('Canadá')">Comprar Pacote</button>
+        </div>
+
+        <div class="pacote" id="espanha">
+            <img src="espanha.jpg" alt="Espanha">
+            <h3>Espanha</h3>
+            <p>Explore as principais cidades da Espanha em 8 dias.</p>
+            <div class="preco">R$ 6.000</div>
+            <button onclick="comprar('Espanha')">Comprar Pacote</button>
+        </div>
+
+        <div class="pacote" id="italia">
+            <img src="italia.jpg" alt="Itália">
+            <h3>Itália</h3>
+            <p>Uma viagem encantadora de 9 dias pela Itália.</p>
+            <div class="preco">R$ 6.500</div>
+            <button onclick="comprar('Itália')">Comprar Pacote</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Pacotes de Viagem - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function comprar(pacote) {
+            alert("Você escolheu o pacote de " + pacote + ". Agora, siga para o processo de pagamento.");
+            // Aqui você pode adicionar a lógica para redirecionar para outra página ou abrir um formulário de pagamento.
+        }
+    </script>
+</body>
+</html>
